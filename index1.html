@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHIBLI WORLD - Free Downloads</title>
+  <link rel="stylesheet" href="sk.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-4 bg-white shadow">
+    <div class="text-2xl font-bold">GHIBLI WORLD</div>
+    <div class="nav-links flex items-center space-x-4">
+      <!-- Device Dropdown -->
+      <div class="relative">
+        <button id="deviceBtn" class="mx-2 hover:text-cyan-500 focus:outline-none flex items-center">
+          Device
+          <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="deviceDropdown" class="hidden absolute right-0 mt-2 w-36 bg-white rounded-lg shadow-lg z-20">
+          <a href="mobile.html" class="block px-4 py-2 text-gray-700 hover:bg-cyan-100 hover:text-cyan-600">Mobile</a>
+          <a href="desktop.html" class="block px-4 py-2 text-gray-700 hover:bg-cyan-100 hover:text-cyan-600">Desktop</a>
+        </div>
+      </div>
+      <a href="upload.html" class="mx-2 block hover:text-cyan-500">Upload</a>
+      <a href="login.html" class="mx-2 block hover:text-cyan-500">Login</a>
+    </div>
+  </nav>
+  <!-- Hero -->
+  <section class="relative bg-cover bg-center h-64" style="background-image: url('hero.jpg')">
+    <div class="flex items-center justify-center h-full bg-[#06b6d4] bg-opacity-50">
+      <h1 class="text-3xl md:text-4xl font-bold text-white drop-shadow">Find Your Next Ghibli Wallpaper</h1>
+    </div>
+  </section>
+
+  <!-- Search Bar (under header/hero) -->
+  <div class="flex justify-center bg-white py-6 shadow">
+    <div class="relative w-2/3 max-w-xl">
+      <input type="text" placeholder="Search free photos..."
+        class="w-full p-4 rounded-lg shadow transition-all duration-300 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 text-lg pl-12" />
+      <span class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
+        </svg>
+      </span>
+    </div>
+  </div>
+
+  <!-- Trending Photos -->
+  <section class="p-6">
+    <h2 class="text-xl font-bold mb-4">🔥 Trending Photos</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="relative group">
+        <img src="photo/t1.jpg" class="rounded shadow">
+        <a href="photo/t1.jpg" download class="absolute top-2 right-2 bg-blue-500 bg-opacity-80 text-white rounded-full p-2 hover:bg-blue-600 transition-opacity opacity-0 group-hover:opacity-100 flex items-center justify-center" title="Download">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+        </a>
+      </div>
+      <div class="relative group">
+        <img src="photo/sp.jpg" class="rounded shadow">
+        <a href="photo/sp.jpg" download class="absolute top-2 right-2 bg-blue-500 bg-opacity-80 text-white rounded-full p-2 hover:bg-blue-600 transition-opacity opacity-0 group-hover:opacity-100 flex items-center justify-center" title="Download">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+        </a>
+      </div>
+      <div class="relative group">
+        <img src="photo/get.jpg" class="rounded shadow">
+        <a href="photo/get.jpg" download class="absolute top-2 right-2 bg-blue-500 bg-opacity-80 text-white rounded-full p-2 hover:bg-blue-600 transition-opacity opacity-0 group-hover:opacity-100 flex items-center justify-center" title="Download">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+        </a>
+      </div>
+      <div class="relative group">
+        <img src="photo/h1.jpg" class="rounded shadow">
+        <a href="photo/h1.jpg" download class="absolute top-2 right-2 bg-blue-500 bg-opacity-80 text-white rounded-full p-2 hover:bg-blue-600 transition-opacity opacity-0 group-hover:opacity-100 flex items-center justify-center" title="Download">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Popular Photos -->
+  <section class="p-6">
+    <h2 class="text-xl font-bold mb-4">🌟 Popular Photos</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="relative group">
+        <img src="photo/n1.jpg" class="rounded shadow">
+        <a href="photo/n1.jpg" download class="absolute top-2 right-2 bg-blue-500 bg-opacity-80 text-white rounded-full p-2 hover:bg-blue-600 transition-opacity opacity-0 group-hover:opacity-100 flex items-center justify-center" title="Download">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+        </a>
+      </div>
+      <div class="relative group">
+        <img src="photo/n2.jpg" class="rounded shadow">
+        <a href="photo/n2.jpg" download class="absolute top-2 right-2 bg-blue-500 bg-opacity-80 text-white rounded-full p-2 hover:bg-blue-600 transition-opacity opacity-0 group-hover:opacity-100 flex items-center justify-center" title="Download">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+        </a>
+      </div>
+      <div class="relative group">
+        <img src="photo/n3.jpg" class="rounded shadow">
+        <a href="photo/n3.jpg" download class="absolute top-2 right-2 bg-blue-500 bg-opacity-80 text-white rounded-full p-2 hover:bg-blue-600 transition-opacity opacity-0 group-hover:opacity-100 flex items-center justify-center" title="Download">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+        </a>
+      </div>
+      <div class="relative group">
+        <img src="photo/n4.jpg" class="rounded shadow">
+        <a href="photo/n4.jpg" download class="absolute top-2 right-2 bg-blue-500 bg-opacity-80 text-white rounded-full p-2 hover:bg-blue-600 transition-opacity opacity-0 group-hover:opacity-100 flex items-center justify-center" title="Download">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Newest Photos -->
+  <section class="p-6">
+    <h2 class="text-xl font-bold mb-4">🆕 Newest Photos</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="relative group">
+        <img src="photo/n5.jpg" class="rounded shadow">
+        <a href="photo/n5.jpg" download class="absolute top-2 right-2 bg-blue-500 bg-opacity-80 text-white rounded-full p-2 hover:bg-blue-600 transition-opacity opacity-0 group-hover:opacity-100 flex items-center justify-center" title="Download">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+        </a>
+      </div>
+      <div class="relative group">
+        <img src="photo/n6.jpg" class="rounded shadow">
+        <a href="photo/n6.jpg" download class="absolute top-2 right-2 bg-blue-500 bg-opacity-80 text-white rounded-full p-2 hover:bg-blue-600 transition-opacity opacity-0 group-hover:opacity-100 flex items-center justify-center" title="Download">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+        </a>
+      </div>
+      <div class="relative group">
+        <img src="photo/n7.jpg" class="rounded shadow">
+        <a href="photo/n7.jpg" download class="absolute top-2 right-2 bg-blue-500 bg-opacity-80 text-white rounded-full p-2 hover:bg-blue-600 transition-opacity opacity-0 group-hover:opacity-100 flex items-center justify-center" title="Download">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+        </a>
+      </div>
+      <div class="relative group">
+        <img src="photo/n8.jpg" class="rounded shadow">
+        <a href="photo/n8.jpg" download class="absolute top-2 right-2 bg-blue-500 bg-opacity-80 text-white rounded-full p-2 hover:bg-blue-600 transition-opacity opacity-0 group-hover:opacity-100 flex items-center justify-center" title="Download">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" /></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center p-4 mt-8 shadow">
+    © 2025 ghibli world | Free Downloads
+  </footer>
+</footer>
+
+<script>
+function getCookie(name) {
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navDiv = document.getElementById('nav-links');
+  navDiv.innerHTML = '';
+  navDiv.innerHTML += '<a href="#" class="mx-2">Device</a>';
+  navDiv.innerHTML += '<a href="upload.html" class="mx-2">Upload</a>';
+  if (getCookie('user')) {
+    navDiv.innerHTML += '<a href="#" class="mx-2">Profile</a>';
+    navDiv.innerHTML += '<a href="#" class="mx-2">Cart</a>';
+    navDiv.innerHTML += '<a href="#" id="logout-link" class="mx-2">Logout</a>';
+    document.getElementById('logout-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.location.href = "login/logout.php";
+    });
+  } else {
+    navDiv.innerHTML += '<a href="#" id="login-link" class="mx-2">Login</a>';
+    document.getElementById('login-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.location.href = "login.html";
+    });
+  }
+});
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.getElementById('deviceBtn');
+    const dropdown = document.getElementById('deviceDropdown');
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      dropdown.classList.toggle('hidden');
+    });
+    // Optional: close dropdown when clicking outside
+    document.addEventListener('click', function (e) {
+      if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.add('hidden');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
